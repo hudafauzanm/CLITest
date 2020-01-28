@@ -51,14 +51,14 @@ namespace soal9
         {
             var root = new CommandLineApplication()
             {
-                Name = "#6 Get IP Address in private network",
-                Description = "Aplikasi Get IP Address in private network",
+                Name = "#9 Get screenshots from a list of file",
+                Description = "Get screenshots from a list of file",
                 ShortVersionGetter = () => "1.0.0",
             };
 
             root.Command("screenshot-list",app => 
             {
-                app.Description = "Get a screenshot from a URL";
+                app.Description = "Get screenshots from a list of file";
 
                 var text = app.Argument("Text","Masukkan Text");
                 var format = app.Option("--format","Panjang random",CommandOptionType.SingleOrNoValue);

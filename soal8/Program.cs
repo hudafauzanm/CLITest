@@ -29,11 +29,9 @@ namespace soal8
             {
                 if(format == "jpg")
                 {
-                    string path = "D:/Users/bsi50128/CLITest/soal8/";
-                    string[] files = Directory.GetFiles(path,"*.jpg");
+                    string[] files = Directory.GetFiles(Directory.GetCurrentDirectory(),"*.jpg");
                     foreach(string file in files)
                     {
-                        Console.WriteLine(file);
                         if(file.Contains("screenshot"))
                         {
                             var hasil = Path.GetFileNameWithoutExtension(file);
@@ -48,8 +46,7 @@ namespace soal8
                 }
                 else if (format == "png")
                 {
-                    string path = "D:/Users/bsi50128/CLITest/soal8/";
-                    string[] files = Directory.GetFiles(path,"*.png");
+                    string[] files = Directory.GetFiles(Directory.GetCurrentDirectory(),"*.png");
                     foreach(string file in files)
                     {
                         if(file.Contains("screenshot"))
@@ -67,11 +64,9 @@ namespace soal8
             }
             else if(format =="pdf")
             {
-                string path = "D:/Users/bsi50128/CLITest/soal8/";
-                string[] files = Directory.GetFiles(path,"*.pdf");
+                string[] files = Directory.GetFiles(Directory.GetCurrentDirectory(),"*.pdf");
                 foreach(string file in files)
                 {
-                    //Console.WriteLine(file);
                     if(file.Contains("screenshot"))
                     {
                         string hasil = Path.GetFileNameWithoutExtension(file);
@@ -79,8 +74,9 @@ namespace soal8
                         var tambah = int.Parse(coba)+1;
                         await page.PdfAsync($"screenshot-0{tambah}.{format}");
                     }
-                    await page.PdfAsync($"screenshot-0{1}.{format}");
+                    
                 }
+                await page.PdfAsync($"screenshot-0{1}.{format}");
                 await page.CloseAsync();
             }
         }
@@ -106,8 +102,7 @@ namespace soal8
 
             if(jawaban == "jpg")
             {
-                    string path = "D:/Users/bsi50128/CLITest/soal8/";
-                    string[] files = Directory.GetFiles(path,"*.jpg");
+                    string[] files = Directory.GetFiles(Directory.GetCurrentDirectory(),"*.jpg");
                     foreach(string file in files)
                     {
                         if(File.Exists(file))
@@ -121,8 +116,7 @@ namespace soal8
 
             if(jawaban == "png")
             {
-                    string path = "D:/Users/bsi50128/CLITest/soal8/";
-                    string[] files = Directory.GetFiles(path,"*.png");
+                    string[] files = Directory.GetFiles(Directory.GetCurrentDirectory(),"*.jpg");
                     foreach(string file in files)
                     {
                         if(File.Exists(file))
@@ -137,8 +131,7 @@ namespace soal8
 
             if(jawaban == "pdf")
             {
-                    string path = "D:/Users/bsi50128/CLITest/soal8/";
-                    string[] files = Directory.GetFiles(path,"*.png");
+                    string[] files = Directory.GetFiles(Directory.GetCurrentDirectory(),"*.jpg");
                     foreach(string file in files)
                     {
                         if(File.Exists(file))
@@ -149,13 +142,9 @@ namespace soal8
                     await page.PdfAsync($"{output}");   
                     await page.CloseAsync();
             }
-
-            //await page.ScreenshotAsync($"{output}",optScreen);
-            
         }
         static async Task<int> Main(string[] args)
-        {
-            //await screenshotoutput("https://google.com","hasil1.jpg");   
+        { 
             var root = new CommandLineApplication()
             {
                 Name = "#8 Get a screenshot from a URL",

@@ -11,8 +11,8 @@ namespace soal7
         {
             var root = new CommandLineApplication()
             {
-                Name = "#6 Get IP Address in private network",
-                Description = "Aplikasi Get IP Address in private network",
+                Name = "#7 Get External IP Address",
+                Description = "Get External IP Address",
                 ShortVersionGetter = () => "1.0.0",
             };
 

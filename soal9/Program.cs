@@ -29,7 +29,7 @@ namespace soal9
             {
                 if(format == "jpg")
                 {
-                    var change = url.Replace("/","_");
+                    var change = url.Replace("/","_").Replace(":","_");
                     await page.ScreenshotAsync($"{change}.{format}",optScreen);
                     await page.CloseAsync();
                 }

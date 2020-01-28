@@ -1,0 +1,14 @@
+D:\Users\bsi50128\CLITest\soal10\bin\Debug\netcoreapp3.0\soal10.exe
+D:\Users\bsi50128\CLITest\soal10\bin\Debug\netcoreapp3.0\soal10.deps.json
+D:\Users\bsi50128\CLITest\soal10\bin\Debug\netcoreapp3.0\soal10.runtimeconfig.json
+D:\Users\bsi50128\CLITest\soal10\bin\Debug\netcoreapp3.0\soal10.runtimeconfig.dev.json
+D:\Users\bsi50128\CLITest\soal10\bin\Debug\netcoreapp3.0\soal10.dll
+D:\Users\bsi50128\CLITest\soal10\bin\Debug\netcoreapp3.0\soal10.pdb
+D:\Users\bsi50128\CLITest\soal10\bin\Debug\netcoreapp3.0\McMaster.Extensions.CommandLineUtils.dll
+D:\Users\bsi50128\CLITest\soal10\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+D:\Users\bsi50128\CLITest\soal10\obj\Debug\netcoreapp3.0\soal10.csprojAssemblyReference.cache
+D:\Users\bsi50128\CLITest\soal10\obj\Debug\netcoreapp3.0\soal10.AssemblyInfoInputs.cache
+D:\Users\bsi50128\CLITest\soal10\obj\Debug\netcoreapp3.0\soal10.AssemblyInfo.cs
+D:\Users\bsi50128\CLITest\soal10\obj\Debug\netcoreapp3.0\soal10.csproj.CopyComplete
+D:\Users\bsi50128\CLITest\soal10\obj\Debug\netcoreapp3.0\soal10.dll
+D:\Users\bsi50128\CLITest\soal10\obj\Debug\netcoreapp3.0\soal10.pdb
